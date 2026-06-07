@@ -1,0 +1,132 @@
+/*
+******LIMPAR FORMATAÇÕES******
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+******FORMATAÇÕES GENÉRICAS******
+*/
+body{ /*vai aplicar fomratação em todo corpo do html*/
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #C4C4C4;
+}
+
+h1{ /*vai aplicar formatação nos títulos h1*/
+    color: #252525;
+    font-size: 40px;
+}
+h2{ /*vai aplicar formatação nos títulos h2*/
+    color: #0066CC;
+}
+h3{ /*vai aplicar formatação nos títulos h3*/
+    color: #565656;
+    background: #CCCCCC;
+    padding: 5px
+}
+
+/*
+******HEADER:******
+*/
+#header{
+    background-color: #0066CC;
+    padding: 15px;
+    text-align: center;
+}
+
+#logo,#menu{
+    padding: 10px;
+}
+
+#header a:link, #header a:visited{
+    color: #FFFFFF;
+    padding: 8px 12px;
+}
+
+#header a:hover{
+    color: #0066CC;
+    background-color: #FFFFFF;
+    text-decoration:none;
+}
+
+.white{
+    color: #FFFFFF;
+}
+
+/*
+******CONTENT******
+*/
+#content{
+    width: 920px;/*largura*/
+    margin:0 auto;  /*para centralizar o conteudo usamos a propriedade margim: superior e inferior=0 e direita e esquerda=distribuida de forma automática*/
+    padding: 15px; /*margem interna de 15px em todos os lados*/
+}
+
+#posts{
+    width: 660px; /*largura*/
+    float: left; /*flutuar para esquerda */
+}
+
+.post{
+    padding: 20px;
+    margin-bottom: 20px; /*margem inferior*/
+    background: #FFFFFF;
+    text-align: justify;/*alinhamento do texto justificado*/
+}
+
+.data-post{
+    font-size: 13px; /*tamanho da fonte*/
+    border-bottom: 1px solid #0066CC; /*borda inferior 1px sólida e azul*/
+    padding-bottom: 10px; /*padding inferior*/
+    margin-bottom: 10px; /*margem inferior*/
+    display: block; /*mostrar em bloco.Necessário para mudar o comportamento de uma tag em bloco*/
+}
+
+.img-post{
+    width: 620px;/*usamos apenas width (largura) pois se usar height(altura) também, corremos risco de distorcer a imagem*/
+
+}
+
+/*
+******RIGHT SIDE******
+*/
+#right-side{
+    width: 240px; /*tamanho (ver observação)*/
+    float: right; /*flutuar à direita*/
+}
+
+.content-right{
+    background: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.post-right{
+    font-size: 13px; /*fonte menor pois é parte de menos destaque do site*/
+    padding: 5px; /* 5px em todos os lados*/
+    border-bottom: 1px dotted #CCCCCC; /*pontilhado bem pequeno em tom de cinza*/
+}
+/*
+******FORMATAÇÃO DE LINKS******
+*/
+a{
+    text-decoration: none;/*retira toda decoração de texto*/
+}
+
+a:link, a:visited{
+    color: #0066CC; /*todos os link e visitados em azul*/
+}
+a:hover{
+    text-decoration: underline; /*ao passar o cursor em cima fica sublinhado*/
+ }
+
+ #footer{
+    clear: both; /*limpando o comportamento de flutuação à direita*/
+    text-align: center; /*alinhado ao centro*/
+    padding: 15px;
+    background: #FFFFFF; /*fundo branco*/
+    color: #0066CC; /*cor da letra azul*/
+ }
